@@ -43,4 +43,6 @@ INSTALLATION
     foobar normally is a text-file containing all your mp3s, but it can
     also be a script:
       <filename>/path/to/your/poll.php</filename>
+    Add this line to specify that the new playlist is an executable script:
+      <playlist_program>1</playlist_program>
 11. (Re)start ezstream

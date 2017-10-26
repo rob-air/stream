@@ -97,7 +97,7 @@
                         }
 
                 }
-                $query2 = "SELECT id, cid, days FROM automat WHERE starttime<'$qendtime' AND endtime>'$nqendtime' AND endtime<'999999' ORDER BY starttime DESC";
+                $query2 = "SELECT id, cid, days FROM automat WHERE starttime<'$qendtime' AND endtime>'$qendtime' AND endtime<'999999' ORDER BY starttime DESC";
                 $res2 = $db->query( $query2 );
                 if ( $res2->numRows() > 0 ) {
                         $row2 = $res2->fetchrow( DB_FETCHMODE_ASSOC );
